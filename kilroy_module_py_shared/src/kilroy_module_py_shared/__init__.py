@@ -3,6 +3,7 @@ from kilroy_module_py_shared.models import (
     BaseModuleModel,
     BaseSeriesMetricInfo,
     Config,
+    ConfigNotification,
     ConfigSchema,
     ConfigSetReply,
     ConfigSetRequest,
