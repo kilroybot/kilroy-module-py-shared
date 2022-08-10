@@ -55,8 +55,7 @@ class Status(BaseModuleModel):
 
 
 class StatusNotification(BaseModuleModel):
-    old: Status
-    new: Status
+    status: StatusEnum
 
 
 class Config(BaseModuleModel):
@@ -68,17 +67,15 @@ class ConfigSchema(BaseModuleModel):
 
 
 class ConfigNotification(BaseModuleModel):
-    old: Config
-    new: Config
+    config: JSON
 
 
 class ConfigSetRequest(BaseModuleModel):
-    set: Config
+    config: JSON
 
 
 class ConfigSetReply(BaseModuleModel):
-    old: Config
-    new: Config
+    config: JSON
 
 
 class GenerateRequest(BaseModuleModel):
@@ -97,7 +94,7 @@ class FitPostsRequest(BaseModuleModel):
 
 
 class FitPostsReply(BaseModuleModel):
-    success: Literal[True]
+    success: Literal[True] = True
 
 
 class PostScore(BaseModuleModel):
@@ -110,7 +107,7 @@ class FitScoresRequest(BaseModuleModel):
 
 
 class FitScoresReply(BaseModuleModel):
-    success: Literal[True]
+    success: Literal[True] = True
 
 
 class StepRequest(BaseModuleModel):
@@ -118,7 +115,7 @@ class StepRequest(BaseModuleModel):
 
 
 class StepReply(BaseModuleModel):
-    success: Literal[True]
+    success: Literal[True] = True
 
 
 class MetricTypeEnum(str, Enum):
