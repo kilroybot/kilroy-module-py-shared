@@ -94,6 +94,7 @@ class SetConfigResponse(betterproto.Message):
 @dataclass(eq=False, repr=False)
 class GenerateRequest(betterproto.Message):
     quantity: int = betterproto.uint64_field(1)
+    dry: bool = betterproto.bool_field(2)
 
 
 @dataclass(eq=False, repr=False)
