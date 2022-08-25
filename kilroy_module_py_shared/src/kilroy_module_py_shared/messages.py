@@ -111,6 +111,7 @@ class GenerateResponse(betterproto.Message):
 @dataclass(eq=False, repr=False)
 class RealPost(betterproto.Message):
     content: str = betterproto.string_field(1)
+    score: float = betterproto.double_field(2)
 
 
 @dataclass(eq=False, repr=False)
