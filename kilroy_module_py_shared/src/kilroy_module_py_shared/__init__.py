@@ -40,6 +40,8 @@ from kilroy_module_py_shared.messages import (
     WatchMetricsResponse,
     WatchStatusRequest,
     WatchStatusResponse,
+    ResetRequest,
+    ResetResponse,
 )
 from kilroy_module_py_shared.metadata import Metadata
 from kilroy_module_py_shared.models import SerializableModel
