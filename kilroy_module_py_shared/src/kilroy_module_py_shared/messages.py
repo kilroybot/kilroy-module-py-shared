@@ -154,7 +154,8 @@ class StepResponse(betterproto.Message):
 class MetricConfig(betterproto.Message):
     id: str = betterproto.string_field(1)
     label: str = betterproto.string_field(2)
-    config: str = betterproto.string_field(3)
+    group: str = betterproto.string_field(3)
+    config: str = betterproto.string_field(4)
 
 
 @dataclass(eq=False, repr=False)
