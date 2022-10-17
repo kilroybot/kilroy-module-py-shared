@@ -177,3 +177,13 @@ class WatchMetricsResponse(betterproto.Message):
     metric_id: str = betterproto.string_field(1)
     dataset_id: int = betterproto.uint64_field(2)
     data: str = betterproto.string_field(3)
+
+
+@dataclass(eq=False, repr=False)
+class ResetRequest(betterproto.Message):
+    pass
+
+
+@dataclass(eq=False, repr=False)
+class ResetResponse(betterproto.Message):
+    pass
