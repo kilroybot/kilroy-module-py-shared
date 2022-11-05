@@ -14,9 +14,9 @@ shared code for kilroy module SDKs in Python 🤝
 
 This `README` provides info about the development process.
 
-For more info about the package itself
-see `kilroy_module_py_shared/README.md`
-or [docs](https://kilroybot.github.io/kilroy-module-py-shared).
+For more info about the package itself see
+[package `README`](kilroy_module_py_shared/README.md) or
+[docs](https://kilroybot.github.io/kilroy-module-py-shared).
 
 ## Quickstart (on Ubuntu)
 
