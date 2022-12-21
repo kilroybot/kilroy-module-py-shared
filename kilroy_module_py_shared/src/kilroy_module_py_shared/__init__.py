@@ -7,13 +7,8 @@ from kilroy_module_py_shared.errors import (
     STATE_NOT_READY_ERROR,
 )
 from kilroy_module_py_shared.messages import (
-    FitPostsRequest,
-    FitPostsResponse,
-    FitScoresRequest,
-    FitScoresResponse,
     GenerateRequest,
     GenerateResponse,
-    GeneratedPost,
     GetConfigRequest,
     GetConfigResponse,
     GetConfigSchemaRequest,
@@ -27,13 +22,9 @@ from kilroy_module_py_shared.messages import (
     GetStatusRequest,
     GetStatusResponse,
     MetricConfig,
-    PostScore,
-    RealPost,
     SetConfigRequest,
     SetConfigResponse,
     Status,
-    StepRequest,
-    StepResponse,
     WatchConfigRequest,
     WatchConfigResponse,
     WatchMetricsRequest,
@@ -42,6 +33,12 @@ from kilroy_module_py_shared.messages import (
     WatchStatusResponse,
     ResetRequest,
     ResetResponse,
+    SaveRequest,
+    SaveResponse,
+    FitSupervisedRequest,
+    FitSupervisedResponse,
+    FitReinforcedRequest,
+    FitReinforcedResponse,
 )
 from kilroy_module_py_shared.metadata import Metadata
 from kilroy_module_py_shared.models import SerializableModel
